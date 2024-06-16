@@ -1,0 +1,5 @@
+Admin;root
+user;user
+David Fialho;root
+Gabriel Bernardes;user
+viewer;viewer

@@ -1,0 +1,5 @@
+Admin;$2y$10$OMDzjO2P/.O5LO3pOZb6w.MLPlNhOzfdrfgMXPFqzm0D2ggLp9g/a
+user;$2y$10$pD3Z8Ewf6.zO8/fQsTY97.JRbkPXacxgRoojPeJQBeOJyT/FLsSMK
+David Fialho;$2y$10$pD3Z8Ewf6.zO8/fQsTY97.JRbkPXacxgRoojPeJQBeOJyT/FLsSMK
+Gabriel Bernardes;$2y$10$pD3Z8Ewf6.zO8/fQsTY97.JRbkPXacxgRoojPeJQBeOJyT/FLsSMK
+viewer;$2y$10$Z2i6pTPHPpwouTsWFZqo3Otn99vAdoJQ8/FkEAzTstQw1LNc2FhDm

@@ -1,0 +1,62 @@
+.sensor{
+    background-color: #93baff;
+}
+
+.atuador{
+    background-color: #ffbf6c;
+}
+
+.sensor.dark{
+    background-color: #002A7C;
+}
+
+.atuador.dark{
+    background-color: #964F00;
+}
+
+.darkImgs.dark{
+    filter: brightness(0) invert(1);
+}
+
+body.dark{
+    --bs-theme: dark;
+}
+
+.button-margin{
+    margin-left: 9px;
+}
+
+.button-container {
+    display: flex; /* Para tornar os elementos filhos em linha */
+    align-items: center; /* Centraliza os itens verticalmente */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+  }
+  
+  .button-link {
+    margin-right: 20px; /* Adiciona uma margem de 20px entre os botões */
+  }
+
+  .custom-header {
+    font-size: 18px;
+    font-weight: bold;
+    background-color: lightgray;
+  }
+
+  .espacoMais{
+    padding: 10px;
+  }
+  
+  .hidden-button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    outline: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hidden-button img {
+    display: block;
+  }

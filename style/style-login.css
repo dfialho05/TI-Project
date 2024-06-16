@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body{
+    margin: 0;
+    font-family: "Noto Sans", sans-serif;
+}
+.main-login{
+    width: 100vw;
+    height: 100vh;
+    background-color: #201b2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-login{
+    width: 45vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login{
+    width: 86%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 5px;
+    background-color: #2f2841;
+    border-radius: 10px;
+    box-shadow: 0px 10px 40px #00000056;
+
+}
+
+#h1-LOGIN{
+    color: #00ff88;
+    font-weight: 800;
+    margin: 0;
+}
+
+.input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #514869;
+    color: #f0ffffde;
+    font-size: 12px;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+label{
+    color: white;
+    margin-bottom: 10px;
+}
+
+.text-field{
+    margin: 10px 0px;
+    width: 100%;
+}
+.btn-login{
+    width: 100%;
+    padding: 16px 0px;
+    border: none;
+    border-radius: 9px;
+    outline: none;
+    font-weight: 600;
+    background: green;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.TIform{
+    width: 80%;
+}

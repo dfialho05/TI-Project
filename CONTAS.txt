@@ -1,0 +1,5 @@
+Admin - 0000
+user - 1234
+David Fialho - 1234
+Gabriel Bernardes - 1234
+viewer - 2222
