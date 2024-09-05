@@ -5,4 +5,3 @@ The project consists of an IOT on the theme of smart greenhouse.
 
 Here is the project report:
 
-[relatorio.pdf](https://github.com/user-attachments/files/16892807/relatorio.pdf)
