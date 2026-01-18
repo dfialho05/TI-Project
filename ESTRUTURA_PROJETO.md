@@ -14,7 +14,7 @@
 
 ## Visão Geral
 
-Este é um projeto IoT de **Estufa Inteligente** desenvolvido no âmbito da disciplina de Tecnologias de Internet. O sistema permite:
+Este é um projeto IoT de **Estufa Inteligente** desenvolvido no âmbito da disciplina de Tecnologias de Internet. O sistema utiliza **Arduino** e **Raspberry Pi** para criar uma solução IoT completa que permite:
 - Monitorização de temperatura e humidade em tempo real
 - Controlo remoto de atuadores (LEDs, ventiladores, etc.)
 - Captura de imagens através de webcam
@@ -184,7 +184,7 @@ import requests
 import time
 
 def enviar_sensor_novo():
-    API_URL = 'http://10.20.228.90/projeto/api/api.php'
+    API_URL = 'http://SEU_SERVIDOR_IP/projeto/api/api.php'
     valor = ler_sensor_novo()  # Sua função para ler o sensor
     payload = {
         'nome': 'sensorNovo',
@@ -197,7 +197,7 @@ def enviar_sensor_novo():
 **Receber comandos (GET):**
 ```python
 def controlar_atuador_novo():
-    URL = "http://10.20.228.90/projeto/api/api.php?nome=sensorNovo"
+    URL = "http://SEU_SERVIDOR_IP/projeto/api/api.php?nome=sensorNovo"
     try:
         resposta = requests.get(URL)
         if resposta.status_code == 200:
@@ -256,16 +256,16 @@ $nomesSensoresAtuadores = array(
 );
 ```
 
-### Passo 5: Testar
+### 5. Testar
 
 1. **Teste a API manualmente:**
    ```bash
    # POST - Enviar dados
-   curl -X POST http://seu-servidor/projeto/api/api.php \
+   curl -X POST http://SEU_SERVIDOR_IP/projeto/api/api.php \
         -d "nome=sensorNovo&valor=100&hora=2024-01-18 10:00:00"
    
    # GET - Ler dados
-   curl http://seu-servidor/projeto/api/api.php?nome=sensorNovo
+   curl http://SEU_SERVIDOR_IP/projeto/api/api.php?nome=sensorNovo
    ```
 
 2. **Verifique os ficheiros:**
@@ -329,7 +329,7 @@ GET /api/api.php?nome=temperatura
 **Exemplo:**
 ```python
 files = {'file': open('webcam.jpg', 'rb'), 'hora': open('hora.txt', 'rb')}
-response = requests.post('http://servidor/api/upload.php', files=files)
+response = requests.post('http://SEU_SERVIDOR_IP/api/upload.php', files=files)
 ```
 
 ## Integração RPI e Arduino
@@ -344,9 +344,9 @@ response = requests.post('http://servidor/api/upload.php', files=files)
 
 **Configuração WiFi:**
 ```cpp
-char SSID[] = "labs";
-char PASS_WIFI[] = "1nv3nt@r2023_IPLEIRIA";
-char URL[] = "10.20.228.90";
+char SSID[] = "seu_wifi";
+char PASS_WIFI[] = "sua_senha";
+char URL[] = "SEU_SERVIDOR_IP";  // Ex: 192.168.1.100
 ```
 
 **Sensores suportados:**
@@ -371,8 +371,8 @@ BUTTON_PIN = 26
 
 **URLs configuráveis:**
 ```python
-URL_TEMPERATURA = "http://10.20.228.90/projeto/api/api.php?nome=temperatura"
-SERVER_URL = 'http://10.20.228.90/projeto/api/upload.php'
+URL_TEMPERATURA = "http://SEU_SERVIDOR_IP/projeto/api/api.php?nome=temperatura"
+SERVER_URL = 'http://SEU_SERVIDOR_IP/projeto/api/upload.php'
 ```
 
 ## Páginas Web Disponíveis
@@ -505,11 +505,11 @@ $nomesSensoresAtuadores = array(
 ### 5. Testar
 ```bash
 # POST manual
-curl -X POST http://localhost/projeto/api/api.php \
+curl -X POST http://SEU_SERVIDOR_IP/projeto/api/api.php \
      -d "nome=luminosidade&valor=512&hora=2024-01-18 15:00:00"
 
 # GET manual
-curl http://localhost/projeto/api/api.php?nome=luminosidade
+curl http://SEU_SERVIDOR_IP/projeto/api/api.php?nome=luminosidade
 # Deve retornar: 512
 
 # Verificar log
